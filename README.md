@@ -14,12 +14,5 @@ Implements memory storage and retrieval using Mem0 and Qdrant
 
 1. Download or clone repository
 2. Install necessary files with pip install -r requirements.txt
-3. The app expects Qdrant to be running on localhost:6333. Adjust the configuration in the code if your setup is different.
-
-docker pull qdrant/qdrant
-
-docker run -p 6333:6333 -p 6334:6334 \
-    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
-    qdrant/qdrant
     
 4. Run the application with streamlit run arxiv_research_agent.py
